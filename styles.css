@@ -1,0 +1,154 @@
+* {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    display: flex;
+    background-color: black;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    height:100vh;
+    
+
+}
+
+#image {
+  background: peachpuff;
+  flex: 1 1 40vw;
+  padding: 0px;
+  background-image: url('portland.JPG');
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+  
+    
+}
+
+#logoStrip {
+    width: auto;
+    height:100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+   align-items:center;
+   margin-top: 20vh;
+}
+
+#image img {
+    padding: 10px;
+    height:80px;
+}
+
+#formSide {
+    flex: 1 1 60vw;
+    background-color: rgb(37, 37, 37);
+    padding: 30px;
+
+    
+}
+
+#doit{
+    margin-top: 80px;
+}
+
+.form {
+    display:flex;
+    flex-flow:wrap;
+    gap:20px;
+}
+
+.input {
+    width: 40%;
+    display: flex;
+    flex-flow:column wrap;
+    text-transform: uppercase;
+    
+}
+
+.title {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+p {
+    color:rgb(220, 218, 218);
+    font-size: 1.2rem;
+    font-weight:500px;
+
+}
+
+
+.input input[type='text'],
+.input input[type='email'],
+.input input[type='password'],
+.input input[type='number'],
+.input input[type='tel'] {
+
+background-color: #55555500;
+  border: 1px solid #494a4b;
+  border-radius: 3px;
+
+}
+
+.input input:focus {
+    outline: none;
+    border: 2px solid #e4821a;
+}
+
+input:focus {
+    border: 2px solid rgb(255, 165, 0);
+}
+
+
+
+label {
+    color: rgb(104, 104, 104);
+    font-size: 0.7em;
+}
+
+.submit button {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255,165,0);
+    font-weight: 700;
+    font-size: 1.2em;
+    border: 2px solid rgb(255,165,0);
+    border-radius: 5px;
+    padding: 10px 40px;
+    margin: 40px 0;
+
+}
+
+
+#loginleft a {
+    color: rgb(255,165,0);
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        display:block;
+    }
+    #image {
+        width: 100vw;
+        position: static;
+    }
+
+    #formSide {
+        width: 100vw; /* make it take up the full viewport width */
+        position: static; /* if it was previously positioned absolutely or fixed, this will make it follow the normal document flow */
+    }
+
+    #logoStrip{
+        margin:0;
+    }
+
+    .input {
+        width: 70%;
+    }
+}
